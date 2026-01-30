@@ -1,31 +1,28 @@
-# 🚀 Modern Workplace & Sécurité Cloud (Intune / Entra ID)
-Ce projet simule la transition d'un parc informatique traditionnel vers une gestion moderne 100% Cloud. L'objectif est de sécuriser les accès et les données d'une entreprise en utilisant la puissance de la suite Microsoft 365.
+# 🛡️ Modern Workplace & Sécurité Cloud (Intune / Entra ID)
 
-D'accord, je comprends ! Tu veux que l'on prépare ensemble le contenu pour publier ce nouveau lab "Modern Workplace" sur ton GitHub, de la même manière que tu l'as fait pour ton lab Hybridation.
+## 📋 Présentation du Projet
+Ce projet simule la transition d'un parc informatique traditionnel vers une gestion moderne **Cloud Native**. L'objectif est de sécuriser les accès et les données d'une organisation en déployant une infrastructure basée sur la suite **Microsoft 365 Business Premium**.
 
-Pour un portfolio GitHub, le plus important est le fichier README.md. C'est lui qui va "vendre" ton projet. Voici une structure type que tu peux copier et adapter pour ton dépôt :
-🚀 Modern Workplace & Sécurité Cloud (Intune / Entra ID)
-📝 Description
+---
 
-Ce projet simule la transition d'un parc informatique traditionnel vers une gestion moderne 100% Cloud. L'objectif est de sécuriser les accès et les données d'une entreprise en utilisant la puissance de la suite Microsoft 365.
-🛠 Technologies utilisées
+## 🛠️ Stack Technique
+* **Gestion des Identités :** Microsoft Entra ID (Azure AD)
+* **Gestion des Terminaux (MDM) :** Microsoft Intune
+* **Sécurité :** Chiffrement BitLocker, MFA, Accès Conditionnel
+* **Environnement :** VMware Workstation, Windows 10/11 Professionnel
 
-    Microsoft Entra ID (Gestion des identités et accès)
+---
 
-    Microsoft Intune (Gestion des terminaux - MDM)
+## 🚀 Réalisations Clés
 
-    BitLocker (Chiffrement des données)
+### 1. Gouvernance et Identités
+* **Structuration de l'annuaire :** Création de groupes de sécurité ciblés (`GRP-SEC-ADMINS`, `COMMERCIAUX`, `FINANCE`).
+* **Stratégie de licences :** Attribution et gestion des licences Microsoft 365 Business Premium.
 
-    Accès Conditionnel (Stratégies Zero Trust)
+### 2. Sécurisation "Zero Trust"
+* **Accès Conditionnel :** Mise en place de politiques de Multi-Factor Authentication (MFA).
+* **Géofencing :** Restriction des accès basée sur la localisation géographique (blocage des connexions hors zone autorisée).
 
-    VMware / Windows 10 & 11 (Environnement de test)
-
-🎯 Objectifs réalisés
-
-    Gouvernance : Structuration de l'annuaire (Groupes de sécurité) et attribution des licences.
-
-    Sécurité périmétrale : Mise en place du MFA et blocage géographique des connexions suspectes.
-
-    Conformité : Déploiement de stratégies de chiffrement BitLocker via Intune.
-
-    Enrôlement : Passage des postes d'un état non géré à un état "Conforme" et supervisé.
+### 3. Gestion de la Conformité (MDM)
+* **Enrôlement automatique :** Configuration de la portée utilisateur GPM (MDM User Scope).
+* **Protection des données :** Déploiement de stratégies de chiffrement **BitLocker** avec sauvegarde centralisée des clés de récupération dans le Cloud.
